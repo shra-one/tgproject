@@ -18,16 +18,18 @@
 </head>
 
     <body  class="page-" >
-
+        <div class="loader js-loader">
+            <img src="./assets/images/brand/logo.png" alt="">
+        </div>
         <div id="app">
 
-            
-
+             
+ 
 <header id="header" class="site-header">
   <nav class="navbar navbar-expand-lg navbar-dark  ">
     <a class="navbar-brand" href="#">
       <span class="material-icons">apps</span>
-      <span class="navbar-title">Finance and Operations</span>
+      <span class="navbar-title">Process Manager</span>
     </a>
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
@@ -41,25 +43,17 @@
       </form>
       <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
         <li class="nav-item active">
-          <a class="nav-link" href="#">USMF</a>
+          <a class="nav-link" href="#">Company Name</a>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="material-icons">notifications_none</span>
-          <span class="nav-label">Notifications</span>
-          </a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="#"><span class="material-icons">settings</span>
-          <span class="nav-label">Settings</span>
-          </a>
-        </li>
+        
         <li class="nav-item">
           <a class="nav-link" href="#"><span class="material-icons">help_outline</span>
-          <span class="nav-label">Help</span>
+          <span class="nav-label d-flex d-lg-none">Help</span>
           </a>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="#"><span class="avatar">AD</span>
+          <a class="nav-link" href="#">
+          
           <span class="nav-label">Username</span>
           </a>
         </li>
@@ -136,38 +130,7 @@
                     </a>
                 </li>
 
-                <li class="menu__item">
-                    <a href="#" class="menu__link" title="import users">
-                        
-                        <span class="menu__label">Import users</span>
-                    </a>
-                </li> 
-
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        
-                        <span class="menu__label disabled">Maintain versions</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        
-                        <span class="menu__label disabled">Batch imports</span>
-                    </a>
-                </li>
-
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        
-                        <span class="menu__label disabled">User options</span>
-                    </a>
-                </li>
-                <li class="menu__item">
-                    <a href="#" class="menu__link">
-                        
-                        <span class="menu__label disabled">Options</span>
-                    </a>
-                </li>
+                
                 <li class="menu__item">
                     <a href="#" class="menu__link">
                           <span class="material-icons-outlined">search</span>
@@ -207,7 +170,7 @@
 
                     <div class="search-box search-box--custom mb-3 ">
                         <span class="material-icons">search</span>
-                        <input class="form-control mr-sm-2 js-autocomplete" type="search" placeholder="Search">
+                        <input class="form-control mr-sm-2 js-autocomplete" type="search" placeholder="Search users">
 
                     </div>
 
@@ -220,7 +183,40 @@
 
                                     </th>
                                     <th>User ID</th>
-                                    <th>User name</th>
+                                    <th>
+                                        <div class="dropdown">
+                                            <div class=" dropdown-toggle" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                User name
+                                            </div>
+                                            <div class="dropdown-menu shadow" aria-labelledby="dropdownMenuButton">
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="material-icons">arrow_upward</span>
+                                                Sort A to Z
+                                                </a>
+                                                <a class="dropdown-item" href="#">
+                                                    <span class="material-icons">arrow_downward</span>
+                                                Sort Zto A
+                                                </a>
+                                                <div class="dropdown-divider"></div>
+                                                <div class="dropdown-item"  >
+                                                    <b>Username</b><br>  
+                                                    <div class="form-group">
+                                                        <select name="" id="" class="form-control">
+                                                        <option value="">Begins with</option>
+                                                        <option value="">Ends with</option>
+                                                        </select>
+                                                    </div>
+                                                    <div class="form-group">
+                                                        <input type="search" class="form-control">
+                                                    </div>
+                                                    <button type="submit" class="btn btn-primary" >Apply</button>
+                                                    <button type="reset" class="btn btn-light">Clear</button>
+                                                    
+                                                   
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </th>
                                     <th>Email</th>
                                     <th>Company</th>
                                     <th>Person</th>
@@ -228,404 +224,403 @@
                                     <th>Enabled</th>
                                 </thead>
                                 <tbody>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
-                                    <tr>
-                                        <td>
-
-                                            <input class="" type="checkbox" value=""  >
-
-                                        </td>
-                                        <td>
-                                        Admin
-                                        </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span></td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <input class=" " type="checkbox" value=""   >
-                                                
-                                        </td>
-                                        <td> Customer    </td>
-                                        <td>$DFDFD</td>
-                                        <td>johndoe@gmail.com</td>
-                                        <td>Company</td>
-                                        <td>Person</td>
-                                        <td>idflsjflasjdf asdfsad fasdf</td>
-                                        <td>
-                                            <span class="material-icons">done</span>
-                                        </td>
-                                    </tr>
-                                
                                     
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
+                                        <tr>
+                                            <td>
+
+                                                <input class="" type="checkbox" value=""  >
+
+                                            </td>
+                                            <td>
+                                        Admin
+                                        </td>
+                                            <td>$DFDFD</td>
+                                            <td>johndoe@gmail.com</td>
+                                            <td>Company</td>
+                                            <td>Person</td>
+                                            <td>idflsjflasjdf asdfsad fasdf</td>
+                                            <td>
+                                                <span class="material-icons">done</span></td>
+                                        </tr>
+                                        <tr>
+                                            <td>
+                                                <input class=" " type="checkbox" value=""   >
+                                                
+                                        </td>
+                                        <td> Customer    </td>
+                                        <td>$DFDFD</td>
+                                        <td>johndoe@gmail.com</td>
+                                        <td>Company</td>
+                                        <td>Person</td>
+                                        <td>idflsjflasjdf asdfsad fasdf</td>
+                                        <td>
+                                            <span class="material-icons">done</span>
+                                        </td>
+                                    </tr>
+                                
 
                             </tbody>
                         </table>
@@ -634,16 +629,7 @@
             </div>
         </div>
     </main>
-    <div class="page-sidebar page-sidebar--right">
-        <ul class="menu list-unstyled">
-            <li class="menu__item">
-                <a href="#" class="menu__link">
-                    <span class="material-icons-outlined">keyboard_arrow_left</span>
-                    <span class="menu__label">Related Information</span>
-                </a>
-            </li>
-        </ul>
-    </div>
+    
 </div>
 
 
