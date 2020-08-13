@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>tgproject
+        :User edit
+        
+    </title>
+    <!-- Required styles for Material Web -->
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet" prefetch>
+    
+
+    <link rel="stylesheet" href="./assets/css/app.css">
+    <link rel="prefetch" href="./assets/images/icons/icon-sprite.svg" as="image" type="image/svg+xml">
+    
+
+</head>
+
+    <body  class="page-" >
+        
+        <div id="app">
+
+             
+ 
+<header id="header" class="site-header">
+  <nav class="navbar navbar-expand-lg navbar-dark  ">
+    <a class="navbar-brand" href="#">
+      <span class="material-icons">apps</span>
+      <span class="navbar-title">Process Manager</span>
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+      <form class="form-inline search-box ml-auto my-2 my-lg-0">
+      <span class="material-icons">search</span>
+        <input class="form-control mr-sm-2 js-autocomplete" type="search" placeholder="Search">
+        
+      </form>
+      <ul class="navbar-nav ml-auto mt-2 mt-lg-0">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Company Name</a>
+        </li>
+        
+        <li class="nav-item">
+          <a class="nav-link" href="#"><span class="material-icons">help_outline</span>
+          <span class="nav-label d-flex d-lg-none">Help</span>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">
+          
+          <span class="nav-label">Username</span>
+          </a>
+        </li>
+        
+      </ul>
+
+    </div>
+  </nav>
+</header>
+            <div id="content">
+                <nav class="navigation"> 
+    <ul class="menu">
+        <li class="menu__item">
+            <div  class="menu__link menu__link--parent menu__link--top js-navigation-menu ">
+                <span class="material-icons">dehaze</span>
+                <span class="material-icons">navigation</span>
+            </div>
+        </li>
+        <li class="menu__item">
+            <div   class="menu__link menu__link--parent ">
+                <span class="material-icons-outlined menu__icon js-navigation-menu">home </span>
+                <a  href="./" class="menu__label">Home</a>
+            </div>
+        </li>
+        <li class="menu__item ">
+            <div   class="menu__link menu__link--parent "    >
+                <span class="material-icons menu__icon js-navigation-menu">star_outline</span>
+                <span class="menu__label menu__label--has-dropdown js-submenu-toggle">Favourites</span>
+            </div>
+            <div class="menu__submenu "   >
+                <a href="#" class="menu__link">All sales order</a>
+                <a href="#" class="menu__link">All shipments</a>
+                <a href="#" class="menu__link">picking list registration</a>
+            </div>
+        </li>
+
+        <li class="menu__item ">
+            <div  class="menu__link menu__link--parent active" >
+                <span class="material-icons menu__icon js-navigation-menu">schedule</span>
+                <span class="menu__label menu__label--has-dropdown js-submenu-toggle">Recent</span>
+            </div>
+            <div class="menu__submenu "  >
+                <a href="#" class="menu__link">All Customers</a>
+                <a href="./user-listings.html" class="menu__link">users</a>
+                <a href="#" class="menu__link">picking list registration</a>
+                <a href="#" class="menu__link">Appointment Schedule</a>
+            </div>
+        </li>
+    </ul>
+</nav>
+                <div class="content-area">
+                    
+    <div class="page-content">
+        <nav class="user-navigation">
+            <ul class="menu list-unstyled">
+                <li class="menu__item">
+                    <a href="#" class="menu__link" title="Edit User">
+                        <span class="material-icons-outlined">create</span>
+                        <span class="menu__label">Edit</span>
+                    </a>
+                </li>
+
+                <li class="menu__item">
+                    <a href="#" class="menu__link" title="Add new user">
+                        <span class="material-icons-outlined">add</span>
+                        <span class="menu__label">New</span>
+                    </a>
+                </li>
+
+                 <li class="menu__item">
+                    <a href="#" class="menu__link" title="Delete user">
+                        <span class="material-icons-outlined">delete</span>
+                        <span class="menu__label">Delete</span>
+                    </a>
+                </li>
+
+                
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                          <span class="material-icons-outlined">search</span>
+                        <span class="menu__label sr-only">search</span>
+                    </a>
+                </li>
+
+            </ul>
+
+             <ul class="menu list-unstyled">
+             <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <span class="material-icons-outlined">autorenew</span>
+                        <span class="menu__label sr-only">reload</span>
+                    </a>
+                </li>
+             <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <span class="material-icons-outlined">open_in_full</span>
+                        <span class="menu__label sr-only">Fullscreen</span>
+                    </a>
+                </li>
+             </ul>
+        </nav>
+        <div class="page-sidebar page-sidebar--left">
+            <ul class="menu list-unstyled">
+                <li class="menu__item">
+                    <a href="#" class="menu__link">
+                        <span class="material-icons-outlined">filter_alt</span></a>
+                </li>
+            </ul>
+        </div>
+        <main class="page-main">
+            <div class="wrapper">
+                <div class="content-block flexed">
+                    <a href="#" class="text-primary">
+                        <small>Users</small>
+                    </a>
+                    <h5 class="page-title">Vince Vince</h5>
+
+                    <div class="content-box content-box--no-scroll">
+                        <div class="bg-white">
+                            <h6  class="collapse-title" data-toggle="collapse" href="#collapseExample" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            User Details  <span class="material-icons">keyboard_arrow_down</span>
+                            </h6>
+                            <div class="collapse" id="collapseExample">
+                                <div class="collapse-body">
+                                    <div class="user-edit-section ">
+                                        <div class="user-edit-section-item">
+                                            <div class="form-group form-group-sm">
+                                                <label for="">User ID</label>
+                                                <input type="text" value="vince" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="user-edit-section-item">
+                                            <div class="form-group form-group-sm">
+                                                <label for="">User name</label>
+                                                <input type="text" value="Vince" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="user-edit-section-item">
+                                            <div class="form-group form-group-sm">
+                                                <label for="">Provider</label>
+                                                <input type="url" value="https://sts.windows.net" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="user-edit-section-item">
+                                            <div class="form-group form-group-sm">
+                                                <label for="">Email</label>
+                                                <input type="email"  value="vince@email.com" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="user-edit-section-item">
+                                            <div class="form-group form-group-sm">
+                                                <label for="">TelemetryID</label>
+                                                <input type="text" value="[343d-2323-2323]" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="user-edit-section-item">
+                                            <div class="form-group form-group-sm">
+                                                <label for="">Company</label>
+                                                <input type="text" value="Company Name" class="form-control">
+                                            </div>
+                                        </div>
+                                        <div class="user-edit-section-item">
+
+                                            <div class="form-group form-group-sm">
+                                                <label for="">Person</label>
+                                                <input type="text" class="form-control">
+                                            </div>
+
+                                            <b>Enable</b>
+                                            <div class="custom-control custom-switch">
+                                                <input type="checkbox" class="custom-control-input" id="customSwitch1">
+                                                <label class="custom-control-label" for="customSwitch1">Yes</label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="content-box  ">
+                        <div class="bg-white">
+                            <h6 class="collapse-title" data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapseExample">
+                            User's roles  <span class="material-icons">keyboard_arrow_down</span>
+                            </h6>
+                            <div class="collapse " id="collapse2">
+                                <nav class="user-navigation bg-white">
+                                    <ul class="menu list-unstyled">
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link" title="Edit User">
+                                                <span class="material-icons-outlined">add</span>
+                                                <span class="menu__label">Assign roles</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link disabled" title="Delete user">
+                                                <span class="material-icons-outlined">delete</span>
+                                                <span class="menu__label">Remove role</span>
+                                            </a>
+                                        </li>
+
+                                        <li class="menu__item">
+                                            <a href="#" class="menu__link">
+
+                                                <span class="menu__label  ">Assign organizations</span>
+                                            </a>
+                                        </li>
+
+                                    </ul>
+
+                                </nav>
+
+                                <div class="p-2">
+                                    <div class="user-roles">
+                                    	<ul class="menu list-unstyled">
+                                    	    <li class="menu__item">
+                                    	        <a href="#" class="menu__link menu--has-dropdown js-submenu-toggle">Roles</a>
+                                                <div class="menu__submenu">
+                                                    <a href="#" class="menu__link">Constumer service manager</a>
+                                                    <a href="#" class="menu__link">All Customers</a>
+                                                    <a href="#" class="menu__link">Employee</a>
+                                                    <a href="#" class="menu__link">Manager</a>
+                                                    <a href="#" class="menu__link">Material manager</a>
+                                                </div>
+                                    	    </li>
+    
+                                            <li class="menu__item">
+                                    	        <a href="#" class="menu__link menu--has-dropdown js-submenu-toggle">System user</a>
+                                                <div class="menu__submenu">
+                                                    <a href="#" class="menu__link">Constumer service manager</a>
+                                                    <a href="#" class="menu__link">All Customers</a>
+                                                    <a href="#" class="menu__link">Employee</a>
+                                                    <a href="#" class="menu__link">Manager</a>
+                                                    <a href="#" class="menu__link">Material manager</a>
+                                                </div>
+                                    	    </li>
+                                             <li class="menu__item">
+                                    	        <a href="#" class="menu__link js-submenu-toggle">Warehouse manager</a>
+                                                 
+                                    	    </li>
+                                    	</ul>
+                                    </div>
+    
+                                    <button type="submit" class="btn btn-primary">Save</button>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        
+    </div>
+
+
+                </div>
+
+                
+            </div>
+
+        </div>
+
+        <script src="./assets/js/vendor.js"></script>
+<script src="./assets/js/app.js"></script>
+
+    </body>
+</html>
